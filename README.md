@@ -16,3 +16,4 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 
 ## List of examples
 0. [Simple hello-world-jsp-servlet](00_hello-world-jsp/README.md)
+1. [Simple expressions-jsp-servlet](01_expressions-jsp/README.md)
