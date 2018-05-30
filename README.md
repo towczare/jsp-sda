@@ -15,4 +15,4 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 4. Verify if manager is available `http://localhost:8080/manager/html`
 
 ## List of examples
-1. [Simple hello-world-jsp-servlet](00_hello-world-jsp/README.md)
+0. [Simple hello-world-jsp-servlet](00_hello-world-jsp/README.md)

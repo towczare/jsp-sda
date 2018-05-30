@@ -9,5 +9,4 @@
   <build>
     <finalName>hello-world</finalName>
   </build>
-  <!-- Tomcat plugin -->
 </project>
