@@ -17,3 +17,6 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 ## List of examples
 0. [Simple hello-world-jsp-servlet](00_hello-world-jsp/README.md)
 1. [Simple expressions-jsp-servlet](01_expressions-jsp/README.md)
+2. [Simple declarations-jsp-servlet](02_declarations-jsp/README.md)
+3. [Simple page-elements-jsp-servlet](03_page-elements-jsp/README.md)
+4. [Simple bean-elements-jsp-servlet](04_bean-elements-jsp/README.md)
