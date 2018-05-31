@@ -20,3 +20,4 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 2. [Simple declarations-jsp-servlet](02_declarations-jsp/README.md)
 3. [Simple page-elements-jsp-servlet](03_page-elements-jsp/README.md)
 4. [Simple bean-elements-jsp-servlet](04_bean-elements-jsp/README.md)
+4. [Simple get-params-jsp-servlet](05_get-method-jsp/README.md)
