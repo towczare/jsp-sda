@@ -1,12 +1,3 @@
-# Visit Counter 
-Example of declaration usage
-
-## How to run it?
-Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world-jsp/README.md)
-
-## Exercise
-Create simulation of throwing coin using following enum:
-```
 package foo.bar;
 
 import java.util.Arrays;
@@ -29,6 +20,3 @@ public enum CoinSide {
         return VALUES.get(RANDOM.nextInt(SIZE));
     }
 }
-```
-
-
