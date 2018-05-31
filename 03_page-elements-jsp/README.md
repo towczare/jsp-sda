@@ -7,7 +7,13 @@ Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world
 ## Exercise
 Create random quote generator using include jsp action tag. 
 After each refresh we want to see random quote to appear in random color box.
-
+Example:
+```
+|"We lie best when we lie to ourselves."        |
+| - Stephen King                                |
+|           style="background-color:#A1D303"    |
+|_______________________________________________|
+```
 Some tips:
 To generate hashcolor value you can use following code:
 ```
