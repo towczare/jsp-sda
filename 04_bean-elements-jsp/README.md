@@ -6,3 +6,5 @@ Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world
 
 ## Exercise
 Create form which allows you to provide Tweet like data and present them on details page.
+- Short message up to 160 characters
+- Author
