@@ -9,7 +9,6 @@
     // Get last access time of this Webpage.
     Date lastAccessTime = new Date(session.getLastAccessedTime());
 
-    String title = "Welcome Back to my website";
     Integer visitCount = new Integer(0);
     String visitCountKey = new String("visitCount");
     String userIDKey = new String("userID");
