@@ -24,4 +24,4 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 6. [Simple post-params-jsp-servlet](06_post-method-jsp/README.md)
 7. [Simple cookie-jsp-servlet](07_cookie-jsp/README.md)
 8. [Simple session-jsp-servlet](08_session-jsp/README.md)
-8. [Simple jstl-jsp-servlet](09_jstl-jsp/README.md)
+9. [Simple jstl-jsp-servlet](09_jstl-jsp/README.md)
