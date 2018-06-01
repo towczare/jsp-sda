@@ -9,20 +9,29 @@
     // Get last access time of this Webpage.
     Date lastAccessTime = new Date(session.getLastAccessedTime());
 
+    //Inactive interval
+    int maxInactiveInterval = session.getMaxInactiveInterval();
+
     String title = "Welcome Back to my website";
     Integer visitCount = new Integer(0);
     String visitCountKey = new String("visitCount");
     String userIDKey = new String("userID");
+    String remoteIpAddressKey = new String("ip");
+    String userAgentKey = new String("userAgent");
     String userID = UUID.randomUUID().toString();
 
     // Check if this is new comer on your Webpage.
     if (session.isNew() ){
         session.setAttribute(userIDKey, userID);
         session.setAttribute(visitCountKey,  visitCount);
+        session.setAttribute(userAgentKey,  request.getHeader("User-Agent"));
+        session.setAttribute(remoteIpAddressKey,  request.getRemoteAddr());
     }
     visitCount = (Integer)session.getAttribute(visitCountKey);
     visitCount = visitCount + 1;
     userID = (String)session.getAttribute(userIDKey);
+    String userAgent = (String)session.getAttribute(userAgentKey);
+    String ip = (String)session.getAttribute(remoteIpAddressKey);
     session.setAttribute(visitCountKey,  visitCount);
 %>
 
@@ -42,23 +51,35 @@
     </tr>
     <tr>
         <td>id</td>
-        <td><% out.print(session.getId()); %></td>
+        <td><%= session.getId() %></td>
     </tr>
     <tr>
         <td>Creation Time</td>
-        <td><% out.print(createTime); %></td>
+        <td><%= createTime %></td>
     </tr>
     <tr>
         <td>Time of Last Access</td>
-        <td><% out.print(lastAccessTime); %></td>
+        <td><%= lastAccessTime %></td>
     </tr>
     <tr>
         <td>User ID</td>
-        <td><% out.print(userID); %></td>
+        <td><%= userID %></td>
     </tr>
     <tr>
         <td>Number of visits</td>
-        <td><% out.print(visitCount); %></td>
+        <td><%= visitCount %></td>
+    </tr>
+    <tr>
+        <td>Max inactive interval</td>
+        <td><%= maxInactiveInterval %></td>
+    </tr>
+    <tr>
+        <td>Browser agent</td>
+        <td><%= userAgent %></td>
+    </tr>
+    <tr>
+        <td>Remote ip address</td>
+        <td><%= ip %></td>
     </tr>
 </table>
 
