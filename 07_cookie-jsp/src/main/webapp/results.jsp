@@ -1,6 +1,13 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" %>
 <%@page pageEncoding="UTF-8" %>
 
+<%
+    Cookie title = new Cookie("lastTitleYouSearch", request.getParameter("title"));
+    // Set expiry date after 24 Hrs for both the cookies.
+    title.setMaxAge(30*1*1);
+    response.addCookie(title);
+%>
+
 <html>
     <body style="background-color: orange">
 
