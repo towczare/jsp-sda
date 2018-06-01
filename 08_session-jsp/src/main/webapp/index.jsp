@@ -42,23 +42,23 @@
     </tr>
     <tr>
         <td>id</td>
-        <td><% out.print(session.getId()); %></td>
+        <td><%= session.getId() %></td>
     </tr>
     <tr>
         <td>Creation Time</td>
-        <td><% out.print(createTime); %></td>
+        <td><%= createTime %></td>
     </tr>
     <tr>
         <td>Time of Last Access</td>
-        <td><% out.print(lastAccessTime); %></td>
+        <td><%= lastAccessTime %></td>
     </tr>
     <tr>
         <td>User ID</td>
-        <td><% out.print(userID); %></td>
+        <td><%= userID %></td>
     </tr>
     <tr>
         <td>Number of visits</td>
-        <td><% out.print(visitCount); %></td>
+        <td><%= visitCount %></td>
     </tr>
 </table>
 
