@@ -20,6 +20,6 @@
         <c:set var = "index" scope="page" value="<%= RandomIndex.next() %>"/>
         <img src="https://picsum.photos/200/300?image=<c:out value='${index}'/>" />
     </c:forEach>
-    <a href="index.jsp">new figure</a>
+    <a href="index.jsp">Order new images!</a>
 </body>
 
