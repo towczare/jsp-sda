@@ -16,10 +16,9 @@
 
     <h2>Your requested <c:out value="${param.numberOfImages}" /> images</h2>
 
-    <c:forEach begin="1" end="${param.numberOfImages}" >
-        <c:set var = "index" scope="page" value="<%= RandomIndex.next() %>"/>
-        <img src="https://picsum.photos/200/300?image=<c:out value='${index}'/>" />
-    </c:forEach>
+    <c:set var = "index" scope="page" value="<%= RandomIndex.next() %>"/>
+    <img src="https://picsum.photos/200/300?image=<c:out value='${index}'/>"/>
+
     <a href="index.jsp">Order new images!</a>
 </body>
 
