@@ -4,6 +4,10 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 
 <body>
     <h1>JSTL Examples</h1>
@@ -12,7 +16,7 @@
     <%--
     Set your URL with ?foo=bar to see output!
     --%>
-    <table>
+    <table class="w3-table w3-bordered w3-striped">
         <c:forEach var="entry" items="${param}">
             <tr>
                 <td>${entry.key}</td>
@@ -24,7 +28,7 @@
     </table>
 
     <h2>List of Header Parameters:</h2>
-    <table>
+    <table class="w3-table w3-bordered w3-striped">
         <c:forEach var="entry" items="${header}">
             <tr>
                 <td>${entry.key}</td>
@@ -36,7 +40,7 @@
     </table>
 
     <h2>List of Cookies: </h2>
-    <table class="table" class="table">
+    <table class="w3-table w3-bordered w3-striped">
         <c:forEach var="entry" items="${cookie}">
             <tr>
                 <td>${entry.key}</td>
@@ -49,20 +53,17 @@
 
     <h2>Draw squares:</h2>
 
-    <form action="my-square.jsp" method="post">
-        <table style="with: 50%">
+    <form action="my-images.jsp" method="post">
+        <table class="w3-table w3-bordered w3-striped">
             <tr>
-                <td>How many?</td>
-                <td><input type="number" step="1"  name="numberOfFigures"/></td>
+                <td>How many images?</td>
+                <td><input type="number" step="1"  name="numberOfImages"/></td>
             </tr>
-            <tr>
-                <td>Size (in px, default 50)</td>
-                <td><input type="number" step="5"  name="figureSize"/></td>
-            </tr>
-            <tr>
-                <td>Color</td>
-                <td><input name="figureColor" type="color"></td>
-            </tr></table>
-        <input type="submit" value="Submit" /></form>
+        </table>
+        <input type="submit" value="Submit" />
+    </form>
+
 </body>
+
+</html>
 
