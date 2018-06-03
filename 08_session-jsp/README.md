@@ -15,3 +15,4 @@ String browserType = request.getHeader("User-Agent");
 ```
 request.getRemoteAddr()
 ```
+- Implement GET parameter called `invalidateSession` Whenever set to true invalidate user session.
