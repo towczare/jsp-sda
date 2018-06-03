@@ -3,36 +3,48 @@
 <%@ page import = "java.util.Date" %>
 <%@ page import="java.util.UUID" %>
 <%
-    // Get session creation time.
-    Date createTime = new Date(session.getCreationTime());
-
-    // Get last access time of this Webpage.
-    Date lastAccessTime = new Date(session.getLastAccessedTime());
-
-    //Inactive interval
-    int maxInactiveInterval = session.getMaxInactiveInterval();
-
-    String title = "Welcome Back to my website";
+    Date createTime = null;
+    Date lastAccessTime = null;
+    int maxInactiveInterval = 0;
+    String sessionId = null;
+    String invalidateSessionParam = request.getParameter("invalidateSession");
     Integer visitCount = new Integer(0);
     String visitCountKey = new String("visitCount");
     String userIDKey = new String("userID");
     String remoteIpAddressKey = new String("ip");
     String userAgentKey = new String("userAgent");
-    String userID = UUID.randomUUID().toString();
+    String userID = null;
+    String userAgent = null;
+    String ip = null;
 
-    // Check if this is new comer on your Webpage.
-    if (session.isNew() ){
-        session.setAttribute(userIDKey, userID);
+    if(invalidateSessionParam != null && Boolean.valueOf(invalidateSessionParam)) {
+        session.invalidate();
+    } else{
+        userID =  UUID.randomUUID().toString();
+        // Get session creation time.
+        createTime = new Date(session.getCreationTime());
+
+        // Get last access time of this Webpage.
+        lastAccessTime = new Date(session.getLastAccessedTime());
+
+        //Inactive interval
+        maxInactiveInterval = session.getMaxInactiveInterval();
+        sessionId = session.getId();
+
+        // Check if this is new comer on your Webpage.
+        if (session.isNew() ){
+            session.setAttribute(userIDKey, userID);
+            session.setAttribute(visitCountKey,  visitCount);
+            session.setAttribute(userAgentKey,  request.getHeader("User-Agent"));
+            session.setAttribute(remoteIpAddressKey,  request.getRemoteAddr());
+        }
+        visitCount = (Integer)session.getAttribute(visitCountKey);
+        visitCount = visitCount + 1;
+        userID = (String)session.getAttribute(userIDKey);
+        userAgent = (String)session.getAttribute(userAgentKey);
+        ip = (String)session.getAttribute(remoteIpAddressKey);
         session.setAttribute(visitCountKey,  visitCount);
-        session.setAttribute(userAgentKey,  request.getHeader("User-Agent"));
-        session.setAttribute(remoteIpAddressKey,  request.getRemoteAddr());
     }
-    visitCount = (Integer)session.getAttribute(visitCountKey);
-    visitCount = visitCount + 1;
-    userID = (String)session.getAttribute(userIDKey);
-    String userAgent = (String)session.getAttribute(userAgentKey);
-    String ip = (String)session.getAttribute(remoteIpAddressKey);
-    session.setAttribute(visitCountKey,  visitCount);
 %>
 
 <html>
@@ -51,7 +63,7 @@
     </tr>
     <tr>
         <td>id</td>
-        <td><%= session.getId() %></td>
+        <td><%= sessionId %></td>
     </tr>
     <tr>
         <td>Creation Time</td>
