@@ -6,7 +6,10 @@ Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world
 
 ## Exercise
 Add additional input params to your search form:
-- category [provide several movie categories like comedy, horror, drama...]
-- adultContent [true, false]
-- author [String]
-- minRatting [radio button number 1 - 9] 
+
+| Name          | Data type                      | Form input type                                                       |
+| ------------- |:------------------------------:| ---------------------------------------------------------------------:|
+| category      | enum (ex. comedy,horror,drama) | [`<select>..</select>`](https://www.w3schools.com/tags/tag_select.asp)|
+| adultContent  | boolean, true false            | [` <input type="checkbox"...`](https://www.w3schools.com/tags/att_input_checked.asp)|
+| author        | String                         | [`<input type="text"...`](https://www.w3schools.com/tags/tag_input.asp)|
+| minRAtting    | int (1 - 9)                    | [`<input type="radio"...`](https://www.w3schools.com/html/html_forms.asp)|
