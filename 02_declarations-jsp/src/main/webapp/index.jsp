@@ -1,3 +1,4 @@
+<%@ page import="foo.bar.CoinSide" %>
 <%@page language="java" contentType="text/html; charset=UTF-8" %>
 <%@page pageEncoding="UTF-8" %>
 
@@ -10,6 +11,7 @@
 
 <!-- Comments in HTML -->
 <%-- Comments in JSP --%>
+<p>Flipping the coin <b><%= CoinSide.flipCoin() %></b></p>
 
 </body>
 </html>
