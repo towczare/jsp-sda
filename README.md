@@ -1,5 +1,7 @@
 # JSP Servlets Examples
 
+[![CodeFactor](https://www.codefactor.io/repository/github/towczare/jsp-examples/badge)](https://www.codefactor.io/repository/github/towczare/jsp-examples)
+
 ## Enable tomcat manager
 
 1. Edit following file:
