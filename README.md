@@ -18,7 +18,23 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 
 
 ## Maven configure settings
-In dropbox `20. JSP Servlets` copy following file `settings.xml` to `Users/USERNAME/.m2` directory
+Paste content of following file `settings.xml` to `Users/USERNAME/.m2` directory (`~/.m2` linux users)
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+ 
+ 
+<servers>  
+    <server>
+       <id>TOMCAT8</id>
+       <username>tomcat</username>
+       <password>tomcat</password>
+    </server>
+</servers> 
+</settings>
+```
 
 
 ## List of examples
