@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.IntStream;
 
 /**
  * Created by tomic on 31.05.18.
@@ -18,5 +19,10 @@ public enum CoinSide {
 
     public static CoinSide flipCoin()  {
         return VALUES.get(RANDOM.nextInt(SIZE));
+    }
+
+    public static int[] drawNumbers() {
+        return IntStream.generate(
+                ()-> new Random().nextInt(36)).distinct().limit(6).toArray();
     }
 }

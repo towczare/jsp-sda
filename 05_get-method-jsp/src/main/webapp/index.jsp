@@ -1,5 +1,8 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" %>
 <%@page pageEncoding="UTF-8" %>
+<%@ page import="java.lang.Integer" %>
+
+<%! private int pageValue = 0; %>
 
 <html>
     <body style="background-color: orange">
@@ -7,10 +10,19 @@
         <h2>Search params:</h2>
 
         <ul>
-            <li>Search phrase: <b><%=request.getParameter("query")%></b></li>
-            <li>Search page: <b><%=request.getParameter("page")%></b></li>
-            <li>Search sort: <b><%=("desc".equals(request.getParameter("sort")) ? "desc" : "asc")%></b></li>
-        </ul>
+            <li>Search phrase: <b>${param.get("query")}</b></li>
 
+            <%
+                String pageParamValue = request.getParameter("page");
+                try {
+                    pageValue = Integer.parseInt(pageParamValue);
+                } catch(java.lang.NumberFormatException ex) {
+                    pageValue = 0;
+                }
+            %>
+
+            <li>Search page: <b><%= pageValue %></b></li>
+            <li>Search sort: <b>${("desc".equals(param.get("sort")) ? "desc" : "asc")}</b></li>
+        </ul>
     </body>
 </html>

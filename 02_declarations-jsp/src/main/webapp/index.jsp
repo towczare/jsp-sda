@@ -12,6 +12,8 @@
 <!-- Comments in HTML -->
 <%-- Comments in JSP --%>
 <p>Flipping the coin <b><%= CoinSide.flipCoin() %></b></p>
+<p><% out.println("COkolwiek"); %></p>
+<p><% out.println(CoinSide.drawNumbers()); %></p>
 
 </body>
 </html>

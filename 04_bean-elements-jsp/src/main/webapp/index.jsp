@@ -12,5 +12,11 @@
             Crypto price: <input type="number" step="0.01" name="price"><br>
             <input type="submit" value="See details">
         </form>
+
+        <form action="tweet-details.jsp" method="post">
+            Tweet content: <textarea maxlength="160" name="content" ></textarea>
+            Author: <input type="text" name="author" /><br>
+            <input type="submit" value="See your tweet">
+        </form>
     </body>
 </html>

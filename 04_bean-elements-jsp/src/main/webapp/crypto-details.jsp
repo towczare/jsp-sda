@@ -7,6 +7,8 @@
         </jsp:useBean>
         <jsp:setProperty property="*" name="crypto"/>
 
+
+
         <p>Crypto name:
             <jsp:getProperty name = "crypto" property = "name"/>
         </p>
