@@ -3,5 +3,5 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-  <display-name>Hello World in JSP</display-name>
+  <display-name>Page Elements in JSP</display-name>
 </web-app>
