@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page import="foo.bar.Category" %>
+<%@ page import="foo.bar.Sephia" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -59,6 +61,35 @@
                 <td>How many images?</td>
                 <td><input type="number" step="1"  name="numberOfImages"/></td>
             </tr>
+
+            <tr>
+                <td>
+                    <select name="sephia">
+                    <c:forEach var="sephia" items="${Sephia.values()}">
+                        <option value="${sephia.getCssClass()}" ><c:out value="${sephia}" /></option>
+                    </c:forEach>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Category:</td>
+                <td>
+                    <select name="category">
+                        <c:forEach var="cat" items="${Category.values()}">
+                            <c:choose>
+                                <c:when test="${cat.isAdult()}">
+                                    <option value="${cat}" ><c:out value="***${cat}***" /></option>
+                                </c:when>
+                                <c:otherwise>
+                                    <option value="${cat}" ><c:out value="${cat}" /></option>
+                                </c:otherwise>
+                            </c:choose>
+                        </c:forEach>
+                    </select>
+                </td>
+            </tr>
+
+
         </table>
         <input type="submit" value="Submit" />
     </form>

@@ -1,7 +1,7 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" %>
 <%@page pageEncoding="UTF-8" %>
-<%@ page import = "java.util.Date" %>
-<%@ page import="java.util.UUID" %>
+<%@page import = "java.util.Date" %>
+<%@page import="java.util.UUID" %>
 <%
     // Get session creation time.
     Date createTime = new Date(session.getCreationTime());
@@ -14,15 +14,19 @@
     String userIDKey = "userID";
     String userID = UUID.randomUUID().toString();
 
-    // Check if this is new comer on your Webpage.
+        // Check if this is new comer on your Webpage.
     if (session.isNew() ){
         session.setAttribute(userIDKey, userID);
         session.setAttribute(visitCountKey,  visitCount);
     }
+
+
     visitCount = (Integer)session.getAttribute(visitCountKey);
     visitCount = visitCount + 1;
     userID = (String)session.getAttribute(userIDKey);
     session.setAttribute(visitCountKey,  visitCount);
+
+
 %>
 
 <html>
