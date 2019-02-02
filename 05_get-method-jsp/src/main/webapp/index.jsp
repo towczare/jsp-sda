@@ -23,6 +23,16 @@
 
             <li>Search page: <b><%= pageValue %></b></li>
             <li>Search sort: <b>${("desc".equals(param.get("sort")) ? "desc" : "asc")}</b></li>
+            <% String category = request.getParameter("category");
+                if(category != null) {
+                    String[] split = category.split(",");
+                    for(String cat : split) {
+            %>
+            <li>Category: <b><%= cat %></b></li>
+            <%
+                    }
+                }
+            %>
         </ul>
     </body>
 </html>
