@@ -65,9 +65,10 @@
             <tr>
                 <td>
                     <select name="sephia">
-                    <c:forEach var="sephia" items="${Sephia.values()}">
-                        <option value="${sephia.getCssClass()}" ><c:out value="${sephia}" /></option>
-                    </c:forEach>
+                        <c:forEach var="sephia" items="${Sephia.values()}">
+                            <option value="${sephia.getCssClass()}" ><c:out value="${sephia}" /></option>
+                        </c:forEach>
+                    </select>
                 </td>
             </tr>
 
