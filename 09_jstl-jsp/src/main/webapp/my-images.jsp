@@ -18,7 +18,7 @@
     <c:forEach begin="0" end="${param.numberOfImages}" var="i" >
         <c:set var = "index" scope="page" value="<%= RandomIndex.next() %>"/>
         <img src="https://picsum.photos/200/300?image=<c:out value='${index}'/>"
-            class="${param.sephia}"
+            class="${param.sephia} w3-border-khaki"
         />
     </c:forEach>
 
