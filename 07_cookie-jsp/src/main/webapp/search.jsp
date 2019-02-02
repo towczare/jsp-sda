@@ -7,7 +7,7 @@
     // Create
     Cookie searchId = new Cookie("searchId", UUID.randomUUID().toString());
     // Set expiry date after 24 Hrs for both the cookies.
-    searchId.setMaxAge(60*60*24);
+    searchId.setMaxAge(10);
     response.addCookie(searchId);
 %>
 

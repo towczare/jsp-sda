@@ -9,9 +9,9 @@
     // Get last access time of this Webpage.
     Date lastAccessTime = new Date(session.getLastAccessedTime());
 
-    Integer visitCount = new Integer(0);
-    String visitCountKey = new String("visitCount");
-    String userIDKey = new String("userID");
+    Integer visitCount = 0;
+    String visitCountKey = "visitCount";
+    String userIDKey = "userID";
     String userID = UUID.randomUUID().toString();
 
     // Check if this is new comer on your Webpage.
