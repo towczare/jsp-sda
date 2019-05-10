@@ -10,7 +10,7 @@ Podążaj za krokami opisanymi tutaj [hello-world-jsp example](../00_hello-world
 ## Zadanie
 Stworzymy twittera dla biedaków `Gołomb`
 
-![.images/pigeon.png](.images/pigeon.png)
+![.images/pigeon.jpg](.images/pigeon.jpg)
 
 Stwórz formularz, który pozwala na wpisanie tekstu tzw. gruch i zaprezentowania ich na stronie szczegółów.
 Formularz będzie pozwalał na zapis:
