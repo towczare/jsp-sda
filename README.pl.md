@@ -1,4 +1,4 @@
-# JSP Servlets Examples
+# JSP Servlets Przykłady
 
 [This file is translated version of original file available here](README.md)
 
@@ -19,7 +19,7 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 4. Zweryfikuj, że manager jest dostępny `http://localhost:8080/manager/html`
 5. Zostaniesz poproszony o hasło któe podałeś w konfiguracji, domyślne `tomcat/tomcat`
 6. Powinieneś zobaczyć okno podobne do poniższego:
-![images//tomcat_manager.png](images//tomcat_manager.png)
+![images//tomcat_manager.png](images/tomcat_manager.png)
 
 ## Konfiguracja ustawień mavena
 1. Wklej poniższą treść do pliku `settings.xml` zlokalizowanego w folderze `Users/USERNAME/.m2` (`~/.m2` użytkownicy linuxa lub maca)
