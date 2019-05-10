@@ -13,6 +13,7 @@ mvn clean package
 :bulb: Feel free to use your IDE for this purpose
    
 ![.images/ide.png](.images/ide.png)
+
 2. Copy `hello-world.war` to `TOMCAT\apache-tomcat-9.0.8\webapps\`
 3. Assuming your tomcat server is up and running, go to `http://localhost:8080/hello-world` using your browser.
 
