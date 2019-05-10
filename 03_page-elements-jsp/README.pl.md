@@ -2,7 +2,7 @@
 
 [:bulb: This file is translated version of original file available here](README.md)
 
-Przykłąd zastosowania elementów stron servletów JSP
+Przykład zastosowania elementów stron servletów JSP
 
 ## :gear: Jak to odpalić?
 Podążaj za krokami opisanymi tutaj [hello-world-jsp example](../00_hello-world-jsp/README.pl.md)
@@ -19,6 +19,7 @@ Przykład:
 |_______________________________________________|
 ```
 Kilka rad:
+
 :bulb: Aby wygenerować kolor jako wartośc hash możesz użyć poniższego kodu:
 ```
 // tworzy duży numer gdzie maksymalna wartość to `ffffff` (w zapisie szestanstkowym) czyli 16777215 (w dziesiętnym) czyli biały niczym Vizir w kolorze

@@ -1,14 +1,14 @@
 # Post method
 
-[:bulb: Jest też dostępna polska wersja tego pliku tutaj](README.pl.md)
+[:bulb: This file is translated version of original file available here](README.md)
 
-Example of http post method
+Przykład zastosowania metody post w servletach JSP
 
-## :gear: How to run it?
-Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world-jsp/README.md)
+## :gear: Jak to odpalić?
+Podążaj za krokami opisanymi tutaj [hello-world-jsp example](../00_hello-world-jsp/README.pl.md)
 
-## Exercise
-Add additional input params to your search form:
+## Zadanie
+Rozbuduj formularz o następujące parametry:
 
 | Name          | Data type                      | Form input type                                                       |
 | ------------- |:------------------------------:| ---------------------------------------------------------------------:|

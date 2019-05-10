@@ -18,6 +18,7 @@ Example:
 |_______________________________________________|
 ```
 Some tips:
+
 :bulb: To generate hashcolor value you can use following code:
 ```
 // create a big random number - maximum is ffffff (hex) = 16777215 (dez)

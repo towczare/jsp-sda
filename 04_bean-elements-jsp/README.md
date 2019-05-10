@@ -1,10 +1,17 @@
 # Bean Elements
+
+[:bulb: Jest też dostępna polska wersja tego pliku tutaj](README.pl.md)
+
 Example of bean elements usage
 
-## How to run it?
+## :gear: How to run it?
 Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world-jsp/README.md)
 
 ## Exercise
-Create form which allows you to provide Tweet like data and present them on details page.
+We are going to create cheap clone of twitter service called `Pigeon`
+
+![.images/pigeon.png](.images/pigeon.png)
+
+Create form which allows you to provide Gruch like data and present them on details page.
 - Short message up to 160 characters
 - Author
