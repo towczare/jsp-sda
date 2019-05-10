@@ -11,6 +11,7 @@ Simplest version of jsp servlet maven
 mvn clean package
 ```
 :bulb: Feel free to use your IDE for this purpose
+   
 ![.images/ide.png](.images/ide.png)
 2. Copy `hello-world.war` to `TOMCAT\apache-tomcat-9.0.8\webapps\`
 3. Assuming your tomcat server is up and running, go to `http://localhost:8080/hello-world` using your browser.
@@ -61,7 +62,9 @@ or if you are doing it again
 mvn clean install && mvn tomcat:redeploy
 ```
 :bulb: If you are not big fan of your console, feel free to use your IDE:
+
 ![.images/deploy_plugin.png](.images/deploy_plugin.png)
+
 ## Exercise
 
 Try to change default behaviour of your servlet and print 
