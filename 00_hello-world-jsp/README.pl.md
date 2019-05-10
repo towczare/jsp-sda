@@ -10,8 +10,11 @@ Najprostsza wersja servletu mavenowego
 ```
 mvn clean package
 ```
+
 :bulb: Możesz śmiało użyć swojego IDE w tym celu.
+
 ![.images/ide.png](.images/ide.png)
+
 2. Skopiuj `hello-world.war` (po poprawnej komplikacji będzie znajdował się w folderze `target`) do `TOMCAT\apache-tomcat-9.0.8\webapps\`
 3. Zakładając, że twój serwer tomcat jest uruchomiony, przejdź do `http://localhost:8080/hello-world` używając swojej przeglądarki w tym celu.
 
@@ -62,8 +65,10 @@ lub jeśli chcesz zrobić to ponownie
 mvn clean install && mvn tomcat:redeploy
 ```
 :bulb: Jeżeli nie jesteś fanem konsoli, możesz osiągnąć dokładnie to samo z poziomu swojego IDE
+
 ![.images/deploy_plugin.png](.images/deploy_plugin.png)
-## Exercise
+
+## Zadanie
 
 Zmień domyślne zachowanie tego servletu i zmuś go do wyświetlenia na stronie następującego komunikatu
 ```
