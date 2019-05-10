@@ -10,7 +10,7 @@ Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world
 ## Exercise
 We are going to create cheap clone of twitter service called `Pigeon`
 
-![.images/pigeon.jpg](.images/pigeon.png)
+![.images/pigeon.jpg](.images/pigeon.jpg)
 
 Create form which allows you to provide Gruch like data and present them on details page.
 - Short message up to 160 characters
