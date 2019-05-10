@@ -4,7 +4,7 @@
 
 Simplest version of jsp servlet maven
 
-## How to run it?
+## :gear: How to run it?
 
 1. Compile to *war* file
 ```

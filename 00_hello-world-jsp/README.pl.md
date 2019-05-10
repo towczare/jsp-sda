@@ -4,7 +4,7 @@
 
 Najprostsza wersja servletu mavenowego
 
-## Jak to uruchomić?
+## :gear: Jak to uruchomić?
 
 1. Skompiluj źródła do pliku *war* poniższym poleceniem
 ```

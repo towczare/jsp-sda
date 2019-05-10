@@ -1,7 +1,10 @@
-# Visit Counter 
-Example of declaration usage
+# Visit Counter
 
-## How to run it?
+[:bulb: Jest też dostępna polska wersja tego pliku tutaj](README.pl.md)
+
+Example of declaration usage in JSP servlet
+
+## :gear: How to run it?
 Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world-jsp/README.md)
 
 ## Exercise
@@ -14,9 +17,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-/**
- * Created by tomic on 31.05.18.
- */
 public enum CoinSide {
     HEADS,
     TAILS;
@@ -30,5 +30,6 @@ public enum CoinSide {
     }
 }
 ```
+2. Now try to present result of `flipCoin` method on your JSP page, each time you refresh your browser new execution of method should happened
 
 
