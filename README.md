@@ -19,7 +19,7 @@ TOMCAT\apache-tomcat-9.0.8\conf\tomcat-users.xml
 4. Verify if manager is available `http://localhost:8080/manager/html`
 5. Basic auth will require from you user and password, default for this configuration `tomcat/tomcat`
 6. You should see following page:
-![images//tomcat_manager.png](images//tomcat_manager.png)
+![.images/tomcat_manager.png](.images/tomcat_manager.png)
 
 ## Maven configure settings
 Paste content of following file `settings.xml` to `Users/USERNAME/.m2` directory (`~/.m2` linux users)
