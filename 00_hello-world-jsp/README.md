@@ -1,4 +1,7 @@
-# hello-world 
+# hello-world
+
+[:bulb: Jest też dostępna polska wersja tego pliku tutaj](README.pl.md)
+
 Simplest version of jsp servlet maven
 
 ## How to run it?
@@ -7,12 +10,14 @@ Simplest version of jsp servlet maven
 ```
 mvn clean package
 ```
+:bulb: Feel free to use your IDE for this purpose
+![.images/ide.png](.images/ide.png)
 2. Copy `hello-world.war` to `TOMCAT\apache-tomcat-9.0.8\webapps\`
 3. Assuming your tomcat server is up and running, go to `http://localhost:8080/hello-world` using your browser.
 
 ## Deployment using tomcat7 plugin
 Alternatively you can use maven tomcat7 plugin to automate process of deployment
-1. Add following plugin to your configuration
+1. Add following plugin to your configuration in `pom.xml` in build section
 ```
   <plugins>
       <plugin>
@@ -28,7 +33,6 @@ Alternatively you can use maven tomcat7 plugin to automate process of deployment
       </plugin>
     </plugins>
 ```
-in build section of your `pom.xml`
 2. Add this server definition to your `~/.m2/setting.xml` file
 ```
 <servers>  
@@ -56,7 +60,8 @@ or if you are doing it again
 ```
 mvn clean install && mvn tomcat:redeploy
 ```
-
+:bulb: If you are not big fan of your console, feel free to use your IDE:
+![.images/deploy_plugin.png](.images/deploy_plugin.png)
 ## Exercise
 
 Try to change default behaviour of your servlet and print 
