@@ -1,7 +1,10 @@
 # Cookie
+
+[:bulb: Jest też dostępna polska wersja tego pliku tutaj](README.pl.md)
+
 Example of cookie in post method
 
-## How to run it?
+## :gear: How to run it?
 Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world-jsp/README.md)
 
 ## Exercise

@@ -1,10 +1,16 @@
 # JSTL
+
+[:bulb: Jest też dostępna polska wersja tego pliku tutaj](README.pl.md)
+
 Example of JSTL
 
-## How to run it?
+## :gear: How to run it?
 Follow the instructions mentioned in [hello-world-jsp example](../00_hello-world-jsp/README.md)
 
 ## Exercise
+
+Once we did Twitter clone, this time we try to implement Instagram clone called `Potemgram`
+
 ### 1. Implement missing JSTL loop in `my-images.jsp` to present requested number of images instead 1
 ### 2. Implement different image effects by providing to form some additional options:
 Hint! `Use enums to define possible values for each effect` and use JSTL tags to display multiple options in select input:
@@ -42,6 +48,9 @@ for more effects look here:
 ```
 https://www.w3schools.com/w3css/w3css_animate.asp
 ```
-Using JSTL `c:choose` `c:when` tags. More you can find here:
-`https://www.tutorialspoint.com/jsp/jstl_core_choose_tag.htm`
-and get parameter passed to browser in results page.
+:bulb: Use JSTL tag:
+* `c:choose`
+* `c:when`
+
+:bulb: More you can find here:
+[https://www.tutorialspoint.com/jsp/jstl_core_choose_tag.htm](https://www.tutorialspoint.com/jsp/jstl_core_choose_tag.htm)
