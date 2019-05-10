@@ -2,7 +2,7 @@
 
 [Jest też dostępna polska wersja tutaj](README.pl.md)
 
-[![CodeFactor](https://www.codefactor.io/repository/github/towczare/jsp-examples/badge)](https://www.codefactor.io/repository/github/towczare/jsp-examples)
+[![CodeFactor](https://www.codefactor.io/repository/github/towczare/jsp-sda/badge)](https://www.codefactor.io/repository/github/towczare/jsp-sda)
 
 ## Enable tomcat manager
 
