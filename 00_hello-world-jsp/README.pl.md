@@ -68,7 +68,7 @@ mvn clean install && mvn tomcat:redeploy
 
 ![.images/deploy_plugin.png](.images/deploy_plugin.png)
 
-## Exercise
+## Zadanie
 
 Zmień domyślne zachowanie tego servletu i zmuś go do wyświetlenia na stronie następującego komunikatu
 ```
