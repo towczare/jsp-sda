@@ -1,5 +1,3 @@
-<%@ page import="foo.bar.Color" %>
-<%@ page import="foo.bar.Quote" %>
 <%@page language="java" contentType="text/html; charset=UTF-8" %>
 <%@page pageEncoding="UTF-8" %>
 
