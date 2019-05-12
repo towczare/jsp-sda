@@ -15,9 +15,16 @@
 <body>
 
     <h2>Your requested <c:out value="${param.numberOfImages}" /> images</h2>
+    <h3>You requested images with size ${param.sizeX} x ${param.sizeY}</h3>
 
-    <c:set var = "index" scope="page" value="<%= RandomIndex.next() %>"/>
-    <img src="https://picsum.photos/200/300?image=<c:out value='${index}'/>"/>
+    <c:forEach var="element" begin="1" end="${param.numberOfImages}" >
+        <c:set var = "index" scope="page" value="<%= RandomIndex.next() %>"/>
+        <img src="https://picsum.photos/${param.sizeX}/${param.sizeY}?image=${index}&blur=5" class="${param.opacity}"/>
+    </c:forEach>
+
+
+
+
 
     <a href="index.jsp">Order new images!</a>
 </body>
