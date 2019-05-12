@@ -17,7 +17,7 @@
     Set your URL with ?foo=bar to see output!
     --%>
     <table class="w3-table w3-bordered w3-striped">
-        <c:forEach var="entry" items="${param}">
+        <c:forEach  var="entry" items="${param}">
             <tr>
                 <td>${entry.key}</td>
                 <td>
@@ -51,7 +51,7 @@
         </c:forEach>
     </table>
 
-    <h2>Draw squares:</h2>
+    <h2>Image requester:</h2>
 
     <form action="my-images.jsp" method="post">
         <table class="w3-table w3-bordered w3-striped">
